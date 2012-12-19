@@ -11,7 +11,6 @@
 现实上 GFW 已经开始白名单化，国外稍微有点意思的网站大都已经被墙，或者随时可能被墙。因此我们认为有必要开始维护一份白名单的 pac 文件。
 
 ***作者收录的国内 CDN 和“云”相关的域名还非常有限。希望同学们能够帮助补充。感谢。***
-<br /> <br />
 
 使用方法
 ---------
@@ -29,17 +28,13 @@ var proxy_type = 'HTTPS'; // or 'SOCKS'
 
 当 `proxy_type`  选为 `HTTPS` 时，此 pac 文件适合用于 [Google Chrome 的安全代理](http://www.chromium.org/developers/design-documents/secure-web-proxy)。
 
-<br /> 
+![使用 pac 文件](http://i.imgur.com/Qr2BN.png)
 
 
 Google Chrome 安全代理 （SSL Secure Proxy）
 -----------
 
 _Firefox 好像也有支持安全代理了。作者还没有测试过。_
-
-<img src="http://i.imgur.com/T2ZGc.png" style="float: right; width: 40%" alt="" /></a>
-
-<div style="width: 55%" markdown="1">
 
 
 Google Chrome 已经支持基于 https 和 SPDY 的安全代理。其原理和效果与 SSH，shadowsocks 以及 goagent 类似：
@@ -65,16 +60,10 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 				   [OPTIONS...] [<PRIVATE_KEY> <CERT>]
 ```
 
-</div>
-
-<br />
 
 其它节省流量的方法
 ----------------
-<div style="width: 100%" markdown="1">
-<img src="http://i.imgur.com/u15Aj.png" style="float: right; width: 40%" alt="" /></a>
 
-<div style="width: 60%" markdown="1">
 
 由于白名单的流量消耗较黑名单要高一些，在浏览器中安装下面的扩展，在提高网页浏览速度的同时，也能节省不少流量。
 
@@ -88,15 +77,9 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 
 在 Chrome 中安装 [FlashControl](https://chrome.google.com/webstore/detail/flashcontrol/mfidmkgnfgnkihnjeklbekckimkipmoe) 或在 Firefox 中安装 [FlashBlock](https://addons.mozilla.org/zh-cn/firefox/addon/flashblock/)，可以达到屏蔽 Flash 的效果。需要打开 Flash，比如视频，只要在被屏蔽的 Flash 上点击一次。
 
-</div>
-</div>
-
-<br /> <br />
-
-
-
+![Chrome 的扩展](http://i.imgur.com/VfMUA.png)
 
 ------
 
-© 2012-2013 地下铁路，MIT License。 本文档使用了 [<span style="height:1em"> <img style="height: 1em" src="http://mouapp.com/Mou_128.png"></span>](//mouapp.com) 和 [marked](http://markedapp.com) 进行编辑。
+© 2012-2013 地下铁路，MIT License。 本文档使用了 [Mou](//mouapp.com) 和 [Marked](http://markedapp.com) 进行编辑。
 
