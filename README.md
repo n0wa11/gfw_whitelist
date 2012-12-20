@@ -31,6 +31,25 @@ var proxy_type = 'HTTPS'; // or 'SOCKS'
 ![使用 pac 文件](http://i.imgur.com/Qr2BN.png)
 
 
+### SSH 代理设置
+
+谈一点题外话，不少网友通过 SSH(Tunnelier/Entunnel) + Chrome + SwitchySharp + GFWList 来翻墙。
+
+假设 SSH 开的本地端口是 7070，
+
+```
+var ip_address = '127.0.0.1:7070';
+```
+
+只需要将下面那个地址，直接贴入上图中 “Auto Config URL” 那个位置，GFWList 就替换成 GFW 白名单了。
+
+```
+https://github.com/n0wa11/gfw_whitelist/raw/master/examples/whitelist_ssh.pac
+```
+
+当然另一个假设是 Github 没有被墙。不过，SwitchySharp 是支持本地 pac 文件的，网友可以下载到硬盘再使用。
+
+
 Google Chrome 安全代理 （SSL Secure Proxy）
 -----------
 
