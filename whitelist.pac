@@ -75,7 +75,9 @@ function FindProxyForURL(url, host)
 
     // custom list. feel free to add.
     // mostly ad servers and img servers
-    if( shExpMatch(host, "(*\.|)homeinns.com") ||
+    if( 
+        shExpMatch(host, "(*\.|)kandian.com") ||
+        shExpMatch(host, "(*\.|)homeinns.com") ||
         shExpMatch(host, "(*\.|)sinajs.com") || 
         shExpMatch(host, "(*\.|)douban.fm")    ||
         shExpMatch(host, "(*\.|)pixlr.com") || 
