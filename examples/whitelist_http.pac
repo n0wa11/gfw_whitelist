@@ -17,8 +17,8 @@
      *                                                 *
      * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-var IP_ADDRESS = '172.16.66.77:3000';
-var PROXY_TYPE = 'SOCKS5';
+var IP_ADDRESS = '127.0.0.1:8087';
+var PROXY_TYPE = 'HTTP';
 var PROXY_METHOD = PROXY_TYPE + ' ' + IP_ADDRESS;
 
 

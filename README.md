@@ -19,35 +19,41 @@
 
 
 ```
-var ip_address = '172.16.66.77:3000';
+var ip_address = 'www.abc.com:443'; // 需要更换成有效的域名
 ```
 
 ```
-var proxy_type = 'HTTPS'; // or 'SOCKS'
+var proxy_type = 'HTTPS'; // or 'SOCKS5'
 ```
 
 当 `proxy_type`  选为 `HTTPS` 时，此 pac 文件适合用于 [Google Chrome 的安全代理](http://www.chromium.org/developers/design-documents/secure-web-proxy)。
 
-![使用 pac 文件](http://i.imgur.com/Qr2BN.png)
+![使用 pac 文件](img/chrome-pac.png)
 
 
-### SSH 代理设置
+### SSH/Goagent/http 代理设置
 
-谈一点题外话，不少网友通过 SSH(Tunnelier/Entunnel) + Chrome + SwitchySharp + GFWList 来翻墙。
+谈一点题外话，不少网友通过 SSH(Tunnelier/Entunnel) 等本地 socks5 代理或者 goagent 等本地 http 代理来翻墙。
 
-假设 SSH 开的本地端口是 7070，
-
-```
-var ip_address = '127.0.0.1:7070';
-```
-
-只需要将下面那个地址，直接贴入上图中 “Auto Config URL” 那个位置，GFWList 就替换成 GFW 白名单了。
+假设 SSH 开的本地端口是 7070，goagent 的本地端口开在 8087，
 
 ```
-https://github.com/n0wa11/gfw_whitelist/raw/master/examples/whitelist_ssh.pac
+'SOCKS5 127.0.0.1:7070';
+```
+```
+'HTTP 127.0.0.1:8087';
 ```
 
-当然另一个假设是 Github 没有被墙。不过，SwitchySharp 是支持本地 pac 文件的，网友可以下载到硬盘再使用。
+只需要将下面那个地址，直接贴入上图中 “Auto Config URL” 那个位置，,
+就可以用上这个白名单了。
+
+```
+https://github.com/n0wa11/gfw_whitelist/raw/master/examples/whitelist_socks5.pac
+```
+```
+https://github.com/n0wa11/gfw_whitelist/raw/master/examples/whitelist_http.pac
+```
+
 
 
 Google Chrome 安全代理 （SSL Secure Proxy）
@@ -96,7 +102,7 @@ shrpx --client-proxy [-b <HOST,PORT>] [-f <HOST,PORT>]
 
 在 Chrome 中安装 [FlashControl](https://chrome.google.com/webstore/detail/flashcontrol/mfidmkgnfgnkihnjeklbekckimkipmoe) 或在 Firefox 中安装 [FlashBlock](https://addons.mozilla.org/zh-cn/firefox/addon/flashblock/)，可以达到屏蔽 Flash 的效果。需要打开 Flash，比如视频，只要在被屏蔽的 Flash 上点击一次。
 
-![Chrome 的扩展](http://i.imgur.com/VfMUA.png)
+![Chrome 的扩展](img/chrome-extension.png)
 
 ------
 
