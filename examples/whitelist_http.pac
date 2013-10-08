@@ -104,7 +104,6 @@ var RULES = [
         ".serving-sys.com",
         ".legolas-media.com",
         ".harrenmedianetwork.com",
-        ".ytimg.com",
         ".google-analytics.com",
         ".qiniucdn.com"
     ],
@@ -378,7 +377,6 @@ var RULES = [
         ".ellechina.com",
         ".elong.com",
         ".ename.net",
-        ".engadget.com",
         ".et8.org",
         ".etao.com",
         ".exam8.com",
@@ -772,7 +770,6 @@ var RULES = [
         ".youku.com",
         ".youshang.com",
         ".youwo123.com",
-        ".ytimg.com",
         ".yupoo.com",
         ".yxlady.com",
         ".yyets.com",
