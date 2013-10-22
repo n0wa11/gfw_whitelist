@@ -41,17 +41,17 @@ var proxy_type = 'HTTPS'; // or 'SOCKS5'
 'SOCKS5 127.0.0.1:7070';
 ```
 ```
-'HTTP 127.0.0.1:8087';
+'HTTP 127.0.0.1:8081';
 ```
 
 只需要将下面那个地址，直接贴入上图中 “Auto Config URL” 那个位置，,
 就可以用上这个白名单了。
 
 ```
-https://github.com/n0wa11/gfw_whitelist/raw/master/examples/whitelist_socks5.pac
+https://github.com/n0wa11/gfw_whitelist/raw/master/examples/whitelist_socks5_7070.pac
 ```
 ```
-https://github.com/n0wa11/gfw_whitelist/raw/master/examples/whitelist_http.pac
+https://github.com/n0wa11/gfw_whitelist/raw/master/examples/whitelist_http_8081.pac
 ```
 
 
