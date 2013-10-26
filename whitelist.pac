@@ -117,7 +117,9 @@ var RULES = [
         ".legolas-media.com",
         ".harrenmedianetwork.com",
         ".google-analytics.com",
-        ".qiniucdn.com"
+        ".qiniucdn.com",
+        ".bangumi.tv",
+        ".moe.fm"
     ],
     //"ihipop"
     [
