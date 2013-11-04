@@ -17,22 +17,9 @@
      *                                                 *
      * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-var IP_ADDRESS = 'www.abc.com:443'; // Need to change to a real address!!
-
-    /* * * * * * * * * * * * * * * * * * * * * * * * * * 
-     *                                                 *
-     * 代理类型 (翻墙一般适用 SOCKS 或 HTTPS)          *
-     * Proxy type                                      *
-     *                                                 *
-     * * * * * * * * * * * * * * * * * * * * * * * * * */
-var PROXY_TYPE = 'HTTPS'; // or 'SOCKS5' or 'PROXY'
-
-    // HTTPS 是用于 Chrome 的安全代理
-    // http://www.chromium.org/developers/design-documents/secure-web-proxy
-
-    /* * * * * * * * * * * * * * * * * * * * * * * * * */
+var IP_ADDRESS = 'www.amonotot.com:443 ';
+var PROXY_TYPE = 'SOCKS5';
 var PROXY_METHOD = PROXY_TYPE + ' ' + IP_ADDRESS;
-
 
     // a very long list. trust chrome will cache the results
 
