@@ -18,7 +18,19 @@
      * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 var IP_ADDRESS = '127.0.0.1:7070';
+
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * 
+     *                                                 *
+     * 代理类型 (翻墙一般适用 SOCKS 或 HTTPS)          *
+     * Proxy type                                      *
+     *                                                 *
+     * * * * * * * * * * * * * * * * * * * * * * * * * */
 var PROXY_TYPE = 'SOCKS5';
+
+    // HTTPS 是用于 Chrome 的安全代理
+    // http://www.chromium.org/developers/design-documents/secure-web-proxy
+
+    /* * * * * * * * * * * * * * * * * * * * * * * * * */
 var PROXY_METHOD = PROXY_TYPE + ' ' + IP_ADDRESS;
 
 
@@ -44,6 +56,11 @@ var RULES = [
     ],
     //custom-list
     [
+        ".zoopda.com",
+        ".yixun.com",
+        ".jd.com",
+        ".zdmimg.com",
+        ".appgame.com",
         ".kandian.com",
         ".homeinns.com",
         ".sinajs.com",
