@@ -56,6 +56,11 @@ var RULES = [
     ],
     //custom-list
     [
+        ".zoopda.com",
+        ".yixun.com",
+        ".jd.com",
+        ".zdmimg.com",
+        ".appgame.com",
         ".kandian.com",
         ".homeinns.com",
         ".sinajs.com",
