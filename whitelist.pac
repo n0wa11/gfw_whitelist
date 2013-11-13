@@ -710,6 +710,7 @@ var RULES = [
         ".tudouui.com",
         ".tui18.com",
         ".tuniu.com",
+        ".typecho.org",
         ".tvmao.com",
         ".twcczhu.com",
         ".u17.com",
