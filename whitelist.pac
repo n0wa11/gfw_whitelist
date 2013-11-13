@@ -487,6 +487,7 @@ var RULES = [
         ".james520.com",
         ".jandan.net",
         ".jb51.net",
+        ".jianshu.io",
         ".jiathis.com",
         ".jiatx.com",
         ".jiayuan.com",
