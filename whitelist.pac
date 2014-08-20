@@ -123,6 +123,7 @@ var RULES = [
         ".harrenmedianetwork.com",
         ".google-analytics.com",
         ".qiniucdn.com"
+        ".verypsp.com"
     ],
     //"ihipop"
     [
