@@ -56,6 +56,11 @@ var RULES = [
     ],
     //custom-list
     [
+		".wscdns.com",
+		".wscdnss.com",
+		".hacdn.net",
+		".hadns.net",
+		".tl88.net",
 		".chinacache.net",
 		".ccgslb.net",
 		".akamaiedge.net",
