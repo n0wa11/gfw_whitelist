@@ -56,6 +56,8 @@ var RULES = [
     ],
     //custom-list
     [
+		".yahooapis.net",
+		".yahoodns.net",
         ".zoopda.com",
         ".yixun.com",
         ".jd.com",
