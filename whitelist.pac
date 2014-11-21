@@ -56,6 +56,9 @@ var RULES = [
     ],
     //custom-list
     [
+		".cdngc.net",
+		".cdnetworks.net",
+		".gccdn.net",
 		".wscdns.com",
 		".wscdnss.com",
 		".hacdn.net",
