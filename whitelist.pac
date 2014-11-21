@@ -56,6 +56,8 @@ var RULES = [
     ],
     //custom-list
     [
+		".chinacache.net",
+		".ccgslb.net",
 		".akamaiedge.net",
 		".akadns.net",
 		".yahooapis.net",
