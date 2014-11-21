@@ -56,6 +56,7 @@ var RULES = [
     ],
     //custom-list
     [
+		".chinacache.net",
 		".126.net.wscdns.com",
 		".windowsupdate.com",
         ".zoopda.com",
