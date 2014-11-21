@@ -56,6 +56,7 @@ var RULES = [
     ],
     //custom-list
     [
+		".windowsupdate.com",
         ".zoopda.com",
         ".yixun.com",
         ".jd.com",
