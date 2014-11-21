@@ -56,6 +56,7 @@ var RULES = [
     ],
     //custom-list
     [
+		".windowsupdate.com",
 		".cdnudns.com",
 		".fastwebcdn.com",
 		".cloudcdn.net",
