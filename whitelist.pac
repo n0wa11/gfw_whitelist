@@ -56,6 +56,7 @@ var RULES = [
     ],
     //custom-list
     [
+		".avast.com",
 		".windowsupdate.com",
 		".cdnudns.com",
 		".fastwebcdn.com",
