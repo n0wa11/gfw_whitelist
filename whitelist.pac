@@ -56,6 +56,7 @@ var RULES = [
     ],
     //custom-list
     [
+		".akamai.net",
 		".edgecastcdn.net",
 		".amazonaws.com",
 		".avast.com",
