@@ -56,6 +56,7 @@ var RULES = [
     ],
     //custom-list
     [
+		".images-amazon.com",
 		".shifen.com",
 		".feng.com",
 		".akamai.net",
