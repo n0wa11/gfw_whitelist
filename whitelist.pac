@@ -56,6 +56,7 @@ var RULES = [
     ],
     //custom-list
     [
+		".amznxslt.com",
 		".cdn-apple.com",
 		".aliyuncs.com",
 		".alipaydns.com",
