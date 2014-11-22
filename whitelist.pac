@@ -56,6 +56,7 @@ var RULES = [
     ],
     //custom-list
     [
+		".shifen.com",
 		".feng.com",
 		".akamai.net",
 		".edgecastcdn.net",
