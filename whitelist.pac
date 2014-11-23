@@ -1095,7 +1095,6 @@ var RULES = [
         ".chinahr.com",
         ".zhaodao123.com",
         ".daqi.com",
-        ".sourceforge.net",
         ".yaolan.com",
         ".5d6d.net",
         ".fobshanghai.com",
