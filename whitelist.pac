@@ -100,7 +100,6 @@ var RULES = [
         ".jing.fm",
         ".oadz.com",
         ".youshang.com",
-        ".kuaidi100.com",
         ".sinahk.net",
         ".kuaidi100.com",
         ".adsame.com",
