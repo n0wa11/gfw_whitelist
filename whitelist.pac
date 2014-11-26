@@ -66,7 +66,6 @@ var RULES = [
 		".images-amazon.com",
 		".shifen.com",
 		".feng.com",
-		".akamai.net",
 		".edgecastcdn.net",
 		".amazonaws.com",
 		".avast.com",
