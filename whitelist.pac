@@ -706,7 +706,6 @@ var RULES = [
         ".soso.com",
         ".soufun.com",
         ".soufunimg.com",
-        ".stackoverflow.com",
         ".staticsdo.com",
         ".stockstar.com",
         ".sttlbb.com",
