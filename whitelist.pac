@@ -769,7 +769,6 @@ var RULES = [
         ".whlongda.com",
         ".williamlong.info",
         ".woniu.com",
-        ".wordpress.org",
         ".wrating.com",
         ".wumii.com",
         ".www.renren.com",
