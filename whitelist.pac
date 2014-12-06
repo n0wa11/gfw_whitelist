@@ -72,7 +72,6 @@ var RULES = [
 		".feng.com",
 		".edgecastcdn.net",
 		".amazonaws.com",
-		".avast.com",
 		".windowsupdate.com",
 		".cdnudns.com",
 		".fastwebcdn.com",
