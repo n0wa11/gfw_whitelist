@@ -56,6 +56,7 @@ var RULES = [
     ],
     //custom-list
     [
+		".pps.tv",
 		".aliyuncdn.com",
 		".baidupcs.com",
 		".wechat.com",
