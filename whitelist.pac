@@ -1,9 +1,9 @@
 /*
             gfw_whitelist.pac
-  
+
             GFW Whitelist
             - inspired by autoproxy and chnroutes
-  
+
             v1.2
             Author: n0gfwall0@gmail.com
             License: MIT License
@@ -1214,7 +1214,7 @@ function FindProxyForURL(url, host) {
     function isDomain(domain) {
         var host_length, domain_length;
         return ((domain[0] === '.') ? (host === domain.slice(1) || ((host_length = host.length) >= (domain_length = domain.length) && host.slice(host_length - domain_length) === domain)) : (host === domain));
-    } 
+    }
 
     function rule_filter(callback) {
         // IMPORTANT: Respect the order of RULES.
@@ -1224,8 +1224,8 @@ function FindProxyForURL(url, host) {
                if (callback(rules[i]) === true) {
                    return true;
                }
-            } 
-        } 
+            }
+        }
         return false;
     }
 
