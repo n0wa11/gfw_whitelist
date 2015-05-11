@@ -127,7 +127,12 @@ var RULES = [
         ".gewara.com",
         ".ele.me",
         ".teambition.com",
-        ".anquanbao.com"
+        ".anquanbao.com",
+        ".ziroom.com",
+        ".guokr.com",
+        ".speedtest.net",
+        ".huazhu.com",
+        ".saraba1st.com"
     ],
     //"ihipop"
     [
