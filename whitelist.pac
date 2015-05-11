@@ -34,21 +34,16 @@ var PROXY_TYPE = 'HTTPS'; // or 'SOCKS5' or 'PROXY'
 var PROXY_METHOD = PROXY_TYPE + ' ' + IP_ADDRESS;
 
 
-    // a very long list. trust chrome will cache the results
+    // A very long list. Hopefully chrome will cache it.
 
-    // skip top Chinese sites
-    // source: 
-    // (1) custom list
+    // Bypass top Chinese sites
+    // Sources:
+    // (1) Custom list
     // (2) https://dl-web.dropbox.com/u/3241202/apps/chn-cdn/dnsmasq.server.conf - ihipop
     // (3) @xream's whitelist
-    // (4) alexa 500
-    //     less all the cn domains
-    //     less google.com.hk, google.com, google.co.uk, googleusercontent.com
-    //     google.com.tw, tumblr.com, wikipedia.org, youtube, github, wordpress
-    //     wsj.com, godaddy,stackoverflow.com, zaobao.com
+    // (4) Alexa 500
 
-    // custom list. feel free to add.
-    // mostly ad servers and img servers
+    // Feel free to add or edit custom list
 var RULES = [
     //cn
     [
