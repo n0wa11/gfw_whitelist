@@ -138,7 +138,6 @@ var RULES = [
         ".chinamobile.com",
         ".chinaren.com",
         ".chiphell.com",
-        ".cn",
         ".cnepub.com",
         ".cnfol.com",
         ".cngba.com",
