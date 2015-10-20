@@ -149,6 +149,7 @@ var RULES = [
         ".dipan.com",
         ".douban.fm",
         ".doubleclick.net",
+        ".douyutv.com",
         ".dpfile.com",
         ".dream4ever.org",
         ".duapp.com",
