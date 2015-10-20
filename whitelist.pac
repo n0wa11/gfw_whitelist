@@ -205,6 +205,7 @@ var RULES = [
         ".invitemedia.com",
         ".ipinyou.com",
         ".iplaysoft.com",
+        ".ipc.me",
         ".irs01.com",
         ".irs01.net",
         ".is686.com",
