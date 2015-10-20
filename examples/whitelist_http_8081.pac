@@ -117,6 +117,7 @@ var RULES = [
         ".appinn.com",
         ".atdmt.com",
         ".atpanel.com",
+        ".baidustatic.com",
         ".bdimg.com",
         ".bdstatic.com",
         ".bestb2b.com",
