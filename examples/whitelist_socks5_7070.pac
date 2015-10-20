@@ -203,6 +203,7 @@ var RULES = [
         ".infzm.com",
         ".invitemedia.com",
         ".ipinyou.com",
+        ".iplaysoft.com",
         ".irs01.com",
         ".irs01.net",
         ".is686.com",
