@@ -624,6 +624,7 @@ var RULES = [
         ".hf365.com",
         ".ad1111.com",
         ".zhihu.com",
+        ".zhimg.com",
         ".blueidea.com",
         ".net114.com",
         ".07073.com",
