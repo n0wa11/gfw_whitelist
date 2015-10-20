@@ -235,6 +235,7 @@ var RULES = [
         ".kuaiwan.com",
         ".lampdrive.com",
         ".lashouimg.com",
+        ".leiphone.com",
         ".legolas-media.com",
         ".letao.com",
         ".local",
