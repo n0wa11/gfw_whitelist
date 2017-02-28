@@ -17,7 +17,7 @@
      *                                                 *
      * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-var IP_ADDRESS = 'www.abc.com:443'; // Need to change to a real address!!
+var IP_ADDRESS = '127.0.0.1:1080'; // Need to change to a real address!!
 
     /* * * * * * * * * * * * * * * * * * * * * * * * * * 
      *                                                 *
@@ -25,7 +25,7 @@ var IP_ADDRESS = 'www.abc.com:443'; // Need to change to a real address!!
      * Proxy type                                      *
      *                                                 *
      * * * * * * * * * * * * * * * * * * * * * * * * * */
-var PROXY_TYPE = 'HTTPS'; // or 'SOCKS5' or 'PROXY'
+var PROXY_TYPE = 'SOCKS5'; // HTTPS or SOCKS5 or PROXY
 
     // HTTPS 是用于 Chrome 的安全代理
     // http://www.chromium.org/developers/design-documents/secure-web-proxy
