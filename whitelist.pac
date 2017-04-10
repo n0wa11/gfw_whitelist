@@ -739,7 +739,7 @@ function FindProxyForURL(url, host) {
     
     function isBlocked(intputHost){
         for (var a = 0 ; a < BLOCKLIST.length ; a++ ){
-            if (intputHost.indexOf(BLOCKLIST[a])){
+            if (intputHost.indexOf(BLOCKLIST[a]) > -1 ){
                 return true ;
             }
         }
