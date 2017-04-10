@@ -5,8 +5,13 @@ var PROXY_TYPE = 'SOCKS5'; // HTTPS or SOCKS5 or PROXY
 
 
 
-    /* * * * * * * * * * * * * * * * * * * * * * * * * */
+
 var PROXY_METHOD = PROXY_TYPE + ' ' + IP_ADDRESS;
+
+// this proxy stragy used to block sites 
+var PROXY_BLOCK = 'SOCKS5 8.8.8.8:1080'
+
+
 
 var RULES = [
     //cn
@@ -731,14 +736,24 @@ function FindProxyForURL(url, host) {
         }
         return false;
     }
-
+    
+    function isBlocked(intputHost){
+        for (var a = 0 ; a < BLOCKLIST.length ; a++ ){
+            if (intputHost.indexOf(BLOCKLIST[a])){
+                return true ;
+            }
+        }
+        return false ;
+    }
+    
     // skip local hosts
     if (isPlainHostName(host) === true || check_ipv4() === true || rule_filter(isDomain) === true) {
         return "DIRECT";
-
-    } else {
-            // if none of above cases, it is always safe to use the proxy
-            return PROXY_METHOD;
+    } else if (isBlocked(host)){
+            return PROXY_BLOCK;
+    }else{
+        // if none of above cases, it is always safe to use the proxy
+        return PROXY_METHOD;           
     }
 
 }
