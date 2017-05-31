@@ -1,49 +1,18 @@
-/*
-            gfw_whitelist.pac
 
-            GFW Whitelist
-            - inspired by autoproxy and chnroutes
+var IP_ADDRESS = '127.0.0.1:1080'; // Need to change to a real address!!
 
-            v1.2
-            Author: n0gfwall0@gmail.com
-            License: MIT License
+var PROXY_TYPE = 'SOCKS5'; // HTTPS or SOCKS5 or PROXY
 
-                                                          */
 
-    /* * * * * * * * * * * * * * * * * * * * * * * * * * 
-     *                                                 *
-     *  一定要换成你的ip地址                           *
-     *  Replace your proxy ip-address:port here!!      *
-     *                                                 *
-     * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-var IP_ADDRESS = 'www.abc.com:443'; // Need to change to a real address!!
 
-    /* * * * * * * * * * * * * * * * * * * * * * * * * * 
-     *                                                 *
-     * 代理类型 (翻墙一般适用 SOCKS 或 HTTPS)          *
-     * Proxy type                                      *
-     *                                                 *
-     * * * * * * * * * * * * * * * * * * * * * * * * * */
-var PROXY_TYPE = 'HTTPS'; // or 'SOCKS5' or 'PROXY'
-
-    // HTTPS 是用于 Chrome 的安全代理
-    // http://www.chromium.org/developers/design-documents/secure-web-proxy
-
-    /* * * * * * * * * * * * * * * * * * * * * * * * * */
 var PROXY_METHOD = PROXY_TYPE + ' ' + IP_ADDRESS;
 
+// this proxy stragy used to block sites 
+var PROXY_BLOCK = 'SOCKS5 8.8.8.8:1080'
 
-    // A very long list. Hopefully chrome will cache it.
 
-    // Bypass top Chinese sites
-    // Sources:
-    // (1) Custom list
-    // (2) https://dl-web.dropbox.com/u/3241202/apps/chn-cdn/dnsmasq.server.conf - ihipop
-    // (3) @xream's whitelist
-    // (4) Alexa 500
 
-    // Feel free to add or edit custom list
 var RULES = [
     //cn
     [
@@ -182,7 +151,6 @@ var RULES = [
         ".haliyuya.com",
         ".harrenmedianetwork.com",
         ".hdslb.com",
-        ".help.apple.com",
         ".hi-pda.com",
         ".hlwan.net",
         ".homeinns.com",
@@ -422,7 +390,6 @@ var RULES = [
         ".pptv.com",
         ".vancl.com",
         ".zhaopin.com",
-        ".apple.com",
         ".bitauto.com",
         ".etao.com",
         ".qunar.com",
@@ -737,6 +704,8 @@ var RULES = [
     ]
 ];
 
+var BLOCKLIST = [".apple.com" ,".help.apple.com"]
+
 function FindProxyForURL(url, host) {
 
     function check_ipv4() {
@@ -767,39 +736,24 @@ function FindProxyForURL(url, host) {
         }
         return false;
     }
-
+    
+    function isBlocked(intputHost){
+        for (var a = 0 ; a < BLOCKLIST.length ; a++ ){
+            if (intputHost.indexOf(BLOCKLIST[a]) > -1 ){
+                return true ;
+            }
+        }
+        return false ;
+    }
+    
     // skip local hosts
     if (isPlainHostName(host) === true || check_ipv4() === true || rule_filter(isDomain) === true) {
         return "DIRECT";
-
-    } else {
-            // if none of above cases, it is always safe to use the proxy
-            return PROXY_METHOD;
+    } else if (isBlocked(host)){
+            return PROXY_BLOCK;
+    }else{
+        // if none of above cases, it is always safe to use the proxy
+        return PROXY_METHOD;           
     }
 
 }
-
-
-/*
-    MIT License
-    Copyright (C) 2012 n0gfwall0@gmail.com
-
-    Permission is hereby granted, free of charge, to any person obtaining a 
-    copy of this software and associated documentation files (the "Software"), 
-    to deal in the Software without restriction, including without limitation 
-    the rights to use, copy, modify, merge, publish, distribute, sublicense, 
-    and/or sell copies of the Software, and to permit persons to whom the 
-    Software is furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in 
-    all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-    IN THE SOFTWARE.
-
-                                                                              */
